@@ -1,0 +1,170 @@
+* {
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 100;
+    padding: 0px;
+    margin: 0px;
+}
+
+.body {
+    background: #ffffff;
+    height:100%;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    overflow: auto;
+}
+
+.flex-container__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 30px;
+    order: 20;
+}
+
+.flex-container__form-div {
+    width: 100%;
+    
+}
+
+.flex-container__form-input {
+    border: none;
+    border-bottom: 4px solid #FF0099;
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.flex-container__form-input:hover {
+    border-bottom: 4px solid #CC00FF;
+}
+
+.flex-container__form-div textarea {
+    min-height: 120px;
+    color: #ffffff;
+    overflow: auto;
+    margin-top: 20px;
+    resize: none;
+}
+
+.flex-container__form-input:focus {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    border-bottom: 4px solid #CC00FF;
+    background: linear-gradient(0deg, #272727 0%, #000000 100%);
+}
+
+.flex-container__div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: radial-gradient(circle, #FF0099 10%, #000000 70%);
+    width: 400px;
+    height: 400px;
+    order: 10;
+
+}
+
+.flex-container__div:hover {
+    animation-name: transicion;
+    animation-duration: 1.3s;
+}
+
+@keyframes transicion{
+    0%{ 
+        background: radial-gradient(circle, #FF0099 10%, #000000 70%);
+    }
+    5%{ 
+        background: radial-gradient(circle, #F50093 10%, #000000 70%);
+    }
+    10%{ 
+        background: radial-gradient(circle, #EA008C 10%, #000000 70%);
+    }
+    15%{ 
+        background: radial-gradient(circle, #E10087 10%, #000000 70%);
+    }
+    20%{ 
+        background: radial-gradient(circle, #DA0083 10%, #000000 70%);
+    }
+    25%{ 
+        background: radial-gradient(circle, #D1007E 10%, #000000 70%);
+    }
+    30%{ 
+        background: radial-gradient(circle, #C80078 10%, #000000 70%);
+    }
+    35%{ 
+        background: radial-gradient(circle, #BF0073 10%, #000000 70%);
+    }
+    40%{ 
+        background: radial-gradient(circle, #BC0072 10%, #000000 70%);
+    }
+    45%{ 
+        background: radial-gradient(circle, #B8006F 10%, #000000 70%);
+    }
+    50%{ 
+        background: radial-gradient(circle, #AF0069 10%, #000000 70%);
+    }
+    55%{ 
+        background: radial-gradient(circle, #B8006F 10%, #000000 70%);
+    }
+    60%{ 
+        background: radial-gradient(circle, #BC0072 10%, #000000 70%);
+    }
+    65%{ 
+        background: radial-gradient(circle, #BF0073 10%, #000000 70%);
+    }
+    70%{ 
+        background: radial-gradient(circle, #C80078 10%, #000000 70%);
+    }
+    75%{ 
+        background: radial-gradient(circle, #D1007E 10%, #000000 70%);
+    }
+    80%{ 
+        background: radial-gradient(circle, #DA0083 10%, #000000 70%);
+    }
+    85%{ 
+        background: radial-gradient(circle, #E10087 10%, #000000 70%);
+    }
+    90%{ 
+        background: radial-gradient(circle, #EA008C 10%, #000000 70%);
+    }
+    95%{ 
+        background: radial-gradient(circle, #F50093 10%, #000000 70%);
+    }
+    100%{ 
+        background: radial-gradient(circle, #FF0099 10%, #000000 70%);
+    }
+}
+
+.flex-container__div-img {
+    width: 75%;
+    margin: auto;
+}
+
+.flex-container__form-button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0px 30px 0px;
+    background: #FF0099;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.flex-container__form-button:hover {
+    background: #CC00FF;
+}
